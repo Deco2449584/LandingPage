@@ -1,0 +1,15 @@
+:root {
+  --first_color: #002818;
+  --second_color: #005b5b;
+  --third_color: #d16a1a;
+  --fourth_color: #ffcd59;
+  --fifth_color: #ffffaf;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
