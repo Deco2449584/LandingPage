@@ -2,8 +2,9 @@
   --first_color: #002818;
   --second_color: #005b5b;
   --third_color: #d16a1a;
-  --fourth_color: #ffcd59;
-  --fifth_color: #ffffaf;
+  --fourth_color: #ffcd590c;
+  --fifth_color: #ffcd59;
+  --six_color: #ffffaf;
 }
 * {
   padding: 0;
@@ -20,16 +21,26 @@ header {
   z-index: 1000;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   background-color: transparent;
   padding: 33px 9%;
 }
 
 .logo {
+  font-family: "permanent marker", cursive;
   font-size: 30px;
   font-weight: 700;
   color: var(--fifth_color);
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  border-radius: 100px;
+}
+.logo img {
+  background-color: transparent;
+  margin-right: 5px;
 }
 .navlist {
   display: flex;
@@ -43,7 +54,8 @@ header {
   transition: all 0.55s ease;
 }
 .navlist li:hover {
-  border-bottom: 2px solid var(--fifth_color);
+  transform: translateX(5px);
+  color: var(--six_color);
 }
 #menu-icon {
   color: var(--fifth_color);
@@ -99,6 +111,7 @@ section {
 .hero-img {
   width: 700px;
   height: auto;
+  margin-top: 40px;
 }
 .hero-text a {
   display: inline-block;
@@ -115,8 +128,9 @@ section {
 }
 .hero-text a:hover {
   background: transparent;
-  border: 1px solid var(--fifth_color);
+  border: 1px solid var(--six_color);
   transform: translateX(8px);
+  color: var(--six_color);
 }
 .hero-text a .ctaa {
   background: transparent;
