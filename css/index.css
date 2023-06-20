@@ -25,9 +25,7 @@ header {
   background-color: transparent;
   padding: 33px 9%;
 }
-body {
-  background-color: var(--first_color);
-}
+
 .logo {
   font-size: 30px;
   font-weight: 700;
@@ -53,4 +51,113 @@ body {
   z-index: 10001;
   cursor: pointer;
   display: none;
+}
+.hero {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(26, 19, 34, 1);
+  background: linear-gradient(
+    135deg,
+    rgba(26, 19, 34, 1),
+    rgba(166, 169, 182, 1)
+  );
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+section {
+  padding: 0 19%;
+}
+.hero-text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--fifth_color);
+  margin-bottom: 40px;
+}
+.hero-text h1 {
+  font-family: "permanent marker", cursive;
+  font-size: 90px;
+  line-height: 1;
+  color: var(--fifth_color);
+  margin: 0 0 45px;
+}
+.hero-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--fifth_color);
+  margin-bottom: 10px;
+}
+.hero-text p {
+  color: var(--fifth_color);
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 40px;
+}
+.hero-img {
+  width: 700px;
+  height: auto;
+}
+.hero-text a {
+  display: inline-block;
+  color: var(--fifth_color);
+  background: var(--fourth_color);
+  border: 1px solid transparent;
+  padding: 12px 30px;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.55s ease;
+}
+.hero-text a:hover {
+  background: transparent;
+  border: 1px solid var(--fifth_color);
+  transform: translateX(8px);
+}
+.hero-text a .ctaa {
+  background: transparent;
+  border: 1px solid var(--fifth_color);
+  margin-left: 20px;
+}
+.hero-text a .ctaa i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.icons {
+  position: absolute;
+  top: 50%;
+  padding: 0 9%;
+  transform: translateY(-50%);
+}
+.icons i {
+  display: block;
+  margin: 26px 0;
+  font-size: 24px;
+  color: var(--fifth_color);
+  transition: all 0.5s ease;
+}
+.icons i:hover {
+  color: var(--fourth_color);
+  transform: translateY(-5px);
+}
+.scroll-down {
+  position: absolute;
+  bottom: 6%;
+  right: 9%;
+}
+.scroll-down i {
+  display: block;
+  padding: 12px;
+  font-size: 25px;
+  color: var(--fifth_color);
+  background: var(--fourth_color);
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+.scroll-down i:hover {
+  transform: translateY(-5px);
 }
