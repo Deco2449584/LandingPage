@@ -13,3 +13,44 @@
   list-style: none;
   text-decoration: none;
 }
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 33px 9%;
+}
+body {
+  background-color: var(--first_color);
+}
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--fifth_color);
+}
+.navlist {
+  display: flex;
+}
+.navlist li {
+  color: var(--fifth_color);
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.55s ease;
+}
+.navlist li:hover {
+  border-bottom: 2px solid var(--fifth_color);
+}
+#menu-icon {
+  color: var(--fifth_color);
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
